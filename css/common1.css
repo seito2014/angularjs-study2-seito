@@ -1,0 +1,216 @@
+/*
+* base
+*/
+.l_contents .b_contents, .l_contents, .sns.sns_vertical {
+  zoom: 1; }
+  .l_contents .b_contents:before, .l_contents:before, .sns.sns_vertical:before, .l_contents .b_contents:after, .l_contents:after, .sns.sns_vertical:after {
+    content: "";
+    display: block; }
+  .l_contents .b_contents:after, .l_contents:after, .sns.sns_vertical:after {
+    clear: both; }
+
+.l_contents {
+  width: 100%;
+  min-width: 1240px; }
+
+.l_contents .b_contents {
+  width: 2040px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px); } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px); } }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body, button {
+  color: #434343;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #434343;
+  outline: none;
+  text-decoration: none; }
+
+::-moz-selection {
+  background: #434343;
+  color: #fff; }
+
+::selection {
+  background: #434343;
+  color: #fff; }
+
+textarea::-moz-selection, input::-moz-selection {
+  background: #eee;
+  color: #333; }
+
+textarea::selection, input::selection {
+  background: #eee;
+  color: #333; }
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  word-break: break-all; }
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+img {
+  vertical-align: bottom; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, div, address, iframe, canvas, hr, textarea {
+  display: block; }
+
+a, label {
+  cursor: pointer; }
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  display: block; }
+
+address, em {
+  font-style: normal; }
+
+hr {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+textarea {
+  resize: vertical;
+  overflow: hidden;
+  -webkit-appearance: none;
+  border: none; }
+
+input, button, select {
+  vertical-align: middle;
+  border-radius: 0px;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-appearance: none; }
+
+table {
+  border-collapse: collapse; }
+
+*:before, *:after {
+  padding: 0;
+  margin: 0;
+  line-height: 1; }
+
+/*
+* common_module
+*/
+.l_contents {
+  margin-bottom: 125px; }
+
+/*
+* layout
+*/
+/*
+* module
+*/
+.sns.sns_horizon {
+  line-height: 1;
+  display: table; }
+  .sns.sns_horizon > li {
+    display: table-cell;
+    height: 63px;
+    vertical-align: top;
+    padding: 0 5px; }
+    .sns.sns_horizon > li:last-child {
+      margin-right: 0; }
+
+.sns.sns_vertical {
+  width: 137px; }
+  .sns.sns_vertical > li {
+    float: left; }
+  .sns.sns_vertical .sns_vertical--share {
+    height: 61px;
+    margin-right: 7px;
+    margin-bottom: 20px; }
+  .sns.sns_vertical .sns_vertical--facebook {
+    height: 61px;
+    margin-bottom: 20px; }
+    .sns.sns_vertical .sns_vertical--facebook > iframe {
+      width: 69px;
+      height: 61px; }
+  .sns.sns_vertical .sns_vertical--twitter {
+    height: 63px;
+    margin-right: 5px;
+    margin-bottom: 19px; }
+  .sns.sns_vertical .sns_vertical--pocket {
+    height: 63px;
+    margin-bottom: 19px; }
+  .sns.sns_vertical .sns_vertical--hatebu {
+    margin-right: 6px; }
+
+/*
+* pages
+*/
+.b_main {
+  /* top */ }
+  .b_main.-top > .heading.heading_primary {
+    margin-bottom: 20px; }
+  .b_main.-top .media_primary {
+    margin-bottom: 43px; }
+  .b_main.-top .button.button_general.-size_l.-size_max.-last_icon {
+    margin-top: 10px; }
+
+.form-group .add_btn_box {
+  margin-top: 20px; }
+.form-group .add_input_box {
+  margin-bottom: 20px; }
+  .form-group .add_input_box:last-of-type {
+    margin-bottom: 0; }
+.form-group.text_center {
+  text-align: center; }
+.form-group textarea.form-control {
+  height: 70px; }

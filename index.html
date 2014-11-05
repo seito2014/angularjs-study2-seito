@@ -129,7 +129,6 @@
                                         <textarea class="form-control" name="comment" rows="3" id="comment" ng-model="comment" ng-minlength="2" ng-maxlength="300" maxlength="300" required></textarea>
                                         <span class="material-input"></span>
                                     </div>
-                                    <p class="help-block">※あと{{300 - comment.length}}文字</p>
                                 </div>
                                 <div class="error_box" ng-if="sample.comment.$dirty" ng-messages="sample.comment.$error">
                                     <div class="popover top error" role="tooltip" ng-message="required">

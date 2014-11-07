@@ -67,7 +67,7 @@
                                         <span class="material-input"></span>
                                     </div>
                                 </div>
-                                <div class="error_box" ng-if="sample.name.$dirty" ng-messages="sample.name.$error">
+                                <div ng-cloak class="error_box" ng-if="sample.name.$dirty" ng-messages="sample.name.$error">
                                     <div class="popover top error" role="tooltip" ng-message="required">
                                         <div class="arrow"></div>
                                         <span class="popover-content">入力されていません！</span>
@@ -89,7 +89,7 @@
                                         <span class="material-input"></span>
                                     </div>
                                 </div>
-                                <div class="error_box" ng-if="sample.email.$dirty" ng-messages="sample.email.$error">
+                                <div ng-cloak class="error_box" ng-if="sample.email.$dirty" ng-messages="sample.email.$error">
                                     <div class="popover top error" role="tooltip" ng-message="required">
                                         <div class="arrow"></div>
                                         <span class="popover-content">入力されていません！</span>
@@ -112,7 +112,7 @@
                                         <span class="material-input"></span>
                                     </div>
                                 </div>
-                                <div class="error_box" ng-if="sample.url.$dirty" ng-messages="sample.url.$error">
+                                <div ng-cloak class="error_box" ng-if="sample.url.$dirty" ng-messages="sample.url.$error">
                                     <div class="popover top error" role="tooltip" ng-message="url">
                                         <div class="arrow"></div>
                                         <span class="popover-content">URLっぽい書き方をしてください！</span>
@@ -129,8 +129,11 @@
                                         <textarea class="form-control" name="comment" rows="3" id="comment" ng-model="comment" ng-minlength="2" ng-maxlength="300" maxlength="300" required></textarea>
                                         <span class="material-input"></span>
                                     </div>
+                                    <p class="help-block">
+                                        ※あと{{300 - comment.length}}
+                                    </p>
                                 </div>
-                                <div class="error_box" ng-if="sample.comment.$dirty" ng-messages="sample.comment.$error">
+                                <div ng-cloak class="error_box" ng-if="sample.comment.$dirty" ng-messages="sample.comment.$error">
                                     <div class="popover top error" role="tooltip" ng-message="required">
                                         <div class="arrow"></div>
                                         <span class="popover-content">入力されていません！</span>

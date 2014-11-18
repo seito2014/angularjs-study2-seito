@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html lang="ja" class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ja" class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    
+        <meta property="og:type" content="article">
+    
+    <meta property="og:image" content="images/ogp.png">
+    <meta property='base_url' content='./' id="base_url">
+    <meta name="apple-mobile-web-app-title" content="Sample">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/common1.css">
+    <!-- build:css css/material.min.css -->
+    <link rel="stylesheet" href="css/theme/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/theme/material/ripples.css">
+    <link rel="stylesheet" href="css/theme/material/material.css">
+    <link rel="stylesheet" href="css/theme/material/material-wfont.css">
+    <!-- endbuild -->
+    <link href="http://fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+    
+    <!-- build:js js/basic.min.js -->
+    <script src="lib/modernizr/modernizr.min.js"></script>
+    <script>var BASE_URL = document.getElementById('base_url').content;</script>
+    <!-- endbuild -->
+</head>
+<body>
+<div id="loading"></div>
+<div id="wrapper">
+<header class="header">
+
+</header>
+<div class="container">
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="forms">Forms</h1>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="well bs-component">
+                    <form class="form-horizontal" name="sample">
+                        <fieldset>
+                            <legend>お問い合わせ</legend>
+
+                            <div class="form-group">
+                                <label for="name" class="col-lg-4 control-label">会社名<span
+                                        class="label label-danger">必須</span></label>
+
+                                <div class="col-lg-8">
+                                    <div class="form-control-wrapper">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="例：株式会社Sample">
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                                <div class="error_box">
+                                    <div class="popover top error" role="tooltip">
+                                        <div class="arrow"></div>
+                                        <span class="popover-content">入力されていません！</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="col-lg-4 control-label">メールアドレス<span
+                                        class="label label-danger">必須</span></label>
+
+                                <div class="col-lg-8">
+                                    <div class="form-control-wrapper">
+                                        <input type="email" name="email" class="form-control" id="email"
+                                               placeholder="例：sample@test.co.jp" autocomplete="off"/>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pw1" class="col-lg-4 control-label">パスワード</label>
+                                <div class="col-lg-8">
+                                    <div class="form-control-wrapper">
+                                        <input type="password" id="pw1" class="form-control">
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pw1" class="col-lg-4 control-label">パスワード（確認）</label>
+                                <div class="col-lg-8">
+                                    <div class="form-control-wrapper">
+                                        <input type="password" id="pw2" class="form-control">
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="url" class="col-lg-4 control-label">URL</label>
+
+                                <div class="col-lg-8">
+                                    <div class="form-control-wrapper">
+                                        <input type="url" name="url" class="form-control" id="url"
+                                               placeholder="例：http://sample.co.jp"/>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comment" class="col-lg-4 control-label">内容説明<span
+                                        class="label label-danger">必須</span></label>
+
+                                <div class="col-lg-8">
+                                    <div class="form-control-wrapper">
+                                        <textarea class="form-control" name="comment" rows="30" maxlength="300" wrap="hard" id="comment"></textarea>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <p class="help-block">※300文字以内</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comment" class="col-lg-4 control-label">将来の夢</label>
+                                <div class="col-lg-8">
+                                    <select class="form-control" name="select_oppai" id="select_oppai">
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group text_center">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="bs-material"><span
+                                            class="check"></span>利用規約・プライバシーポリシーに同意する
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group text_center">
+                                <a href="" class="btn btn-raised btn-default">back</a>
+                                <button type="submit" class="btn btn-raised btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer">
+	<div class="footer_inner"></div>
+</footer>
+
+<!-- build:js js/common.js -->
+<script src="lib/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+<script src="lib/bootstrap/bootstrap.js"></script>
+<script src="lib/bootstrap/bootstrap-sprockets.js"></script>
+<script src="lib/material/material.js"></script>
+<script src="lib/material/ripples.js"></script>
+<script src="lib/jquery.lazyload/jquery.lazyload.min.js"></script>
+<script src="lib/jquery.stickyside/jquery.stickyside.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/smooth_scroll.js"></script>
+<script src="js/operate_lazy.js"></script>
+<script src="js/social.js"></script>
+<!-- endbuild -->
+
+</div>
+</body>
+</html>

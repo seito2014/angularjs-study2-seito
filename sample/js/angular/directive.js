@@ -1,11 +1,6 @@
 //ngMessages
 var app = angular.module('myApp', ['ngMessages']);
 
-/* Controllers */
-function stageController($scope) {
-    $scope.pw1 = 'password';
-}
-
 /* Password Check */
 app.directive('pwCheck', [function () {
     return {
